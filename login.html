@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <h2 class="logo">Project</h2>
+        <nav class="navigation">
+            <button class="btn"><a href="index.html">Sign in</a></button>
+            <button class="btn"><a href="login.html">Login</a></button>
+            <button class="btn" onclick="logout()"><a href="#">Logout</a></button>
+            <!-- <button class="btn" onclick="logout()">logout</button> -->
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="span-icon">
+            <i class="fa-solid fa-x"></i> 
+        </span>
+        <div class="form-box">
+            <h1>Login</h1>
+            <form onsubmit="Login (event)">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text"id="login_email" required>
+                        <label> Inter your Email </label>
+                    
+                </div>
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i> </span>
+                                <input type="text"id="login_password" required>
+                                <label>password</label>
+                            
+                        </div>
+                        <div class="forgat">
+                            <label><input type="checkbox">Renember me</label>
+                            <a href="#">Forgot password</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <br>
+                        <!-- <button class="btn" onclick="logout()">logout</button> -->
+                        <br>
+                        <div class="login-register">
+                            <p>Don't have an account?<a href="index.html" class="register">Sign in</a></p>
+                        </div>
+            </form>
+        </div>
+    <script src="./index.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script>
+          const firebaseConfig = {
+    apiKey: "AIzaSyDyBsUZxP0Bi6FBe17DJxq0m3A67KVZIMU",
+    authDomain: "project-signup-login.firebaseapp.com",
+    projectId: "project-signup-login",
+    storageBucket: "project-signup-login.appspot.com",
+    messagingSenderId: "819900878616",
+    appId: "1:819900878616:web:8ac47d117073ef526d186d",
+    measurementId: "G-KN762X5VKV"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>

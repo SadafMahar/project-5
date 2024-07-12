@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background-image: url(https://media.licdn.com/dms/image/D4D12AQHWjlf6CXDezA/article-cover_image-shrink_720_1280/0/1698039213268?e=2147483647&v=beta&t=9d8VyULomdIk9zkz_U9N_TE4_pUdFq1dFCglRh8fv_o);
+    background-size: cover;
+    background-position: center;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: red;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.wrapper .span-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+.navigation .btn{
+    width: 110px;
+    height: 35px;
+    background: transparent;
+    /* border: 2px solid #fff; */
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1.1em;
+    /* background-color: white; */
+    color: #fff;
+    font-weight: 500;
+       /* display: flex;
+    justify-content: space-between; */
+    margin-left: 40px;
+    transition: .5s;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+  /* background: rgb(241, 235, 235); */
+  background-color: rgb(236, 248, 248);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  
+    /* transition: .2s ease; */
+
+}
+.wrapper.form-box{
+    width: 100%;
+    padding: 40px;
+
+}
+.form-box  h1{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translatey(-50%);
+font-size: 1em;
+color: #162938;
+font-weight: 500;
+pointer-events: none;
+transition: .5s;
+
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+font-size: 1em;
+color: #162938;
+font-weight: 600;
+padding: 0 35px 0 5px;
+}
+.forgat{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.forgat label input{
+    accent-color: #162938;
+    margin-left: 3px;
+}
+.forgat a{
+    color: #162938;
+    text-decoration: none;
+}
+.forgat a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius:  6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.login-register{
+    font-size: 20px;
+    color: #162938;
+    align-items: center;
+    font-weight: 500;
+    margin: 25 0 10px;
+    display: flex;
+    justify-content: center;
+}
+.login-register p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+    outline: none;
+    
+  
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
